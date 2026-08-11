@@ -19,7 +19,7 @@ jobs:
           node-version: 22
 
       - name: Install dependencies
-        run: npm ci --omit=optional --legacy-peer-deps
+        run: npm ci --force
 
       - name: Run tests
         run: npm run test
